@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Baking App</string>
+    <string name="label_Servings">Servings: </string>
+    <string name="label_description">Description</string>
+    <string name="label_Ingredients">Ingredients</string>
+
+    <string name="RECIPE_EXTRAS_KEY" translatable="false">RECIPE_KEY</string>
+    <string name="HANDLED_IMG_KEY" translatable="false">HANDLED_IMG_KEY</string>
+    <string name="Step_Detail_Fragment_KEY" translatable="false">Step_Detail_Fragment_KEY</string>
+    <string name="Step_Detail_Activity_KEY" translatable="false">Step_Detail_Activity_KEY</string>
+    <string name="Player_Position_KEY" translatable="false">Player_Position_KEY</string>
+
+
+    <string name="pic_1" translatable="false">https://www.recipeboy.com/wp-content/uploads/2016/09/No-Bake-Nutella-Pie.jpg</string>
+    <string name="pic_2" translatable="false">https://images.media-allrecipes.com/userphotos/560x315/3850414.jpg</string>
+    <string name="pic_3" translatable="false">https://www.aeb.org/images/imagesArticles/Formulations/YellowCakeLemonCurd.jpg</string>
+    <string name="pic_4" translatable="false">https://www.seriouseats.com/recipes/images/2017/06/20170526-no-bake-cheesecake-vicky-wasik-18-1500x1125.jpg</string>
+    <string name="pic_N" translatable="false">https://imagesvc.timeincapp.com/v3/mm/image?url=http%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2Fimage%2F2016%2F11%2Fmain%2Fbaking-ingredients-1611w.jpg</string>
+    <string name="title_activity_recipe_details">RecipeDetailsActivity</string>
+    <string name="title_step_list">steps</string>
+    <string name="title_step_detail">step Detail</string>
+
+
+    <string name="WIDGET_NAME_KEY" translatable="false">NAME_KEY</string>
+    <string name="WIDGET_PIC_KEY" translatable="false">PIC_KEY</string>
+    <string name="WIDGET_INGREDIENTS_KEY" translatable="false">INGE_KEY</string>
+
+
+
+
+</resources>

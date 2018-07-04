@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coordinatorLayout"
+        android:fitsSystemWindows="true"
+        tools:context=".Activities.RecipeDetailsActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:id="@+id/Detail_Img_arch"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:elevation="4dp"
+        app:shape_arc_cropDirection="outside"
+        app:shape_arc_height="20dp"
+        app:shape_arc_position="bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/favouritesFab"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                app:backgroundTint="@color/fab"
+                app:fabSize="normal"
+                app:layout_anchorGravity="bottom|center"
+                app:srcCompat="@drawable/heart" />
+
+            <com.flaviofaria.kenburnsview.KenBurnsView
+                android:id="@+id/Detail_Img"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+
+            <TextView
+                android:id="@+id/DetailRecipeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:background="@layout/shape"
+                android:fontFamily="@font/beb"
+                android:paddingEnd="22dp"
+                android:paddingStart="25dp"
+                android:text="Recipe "
+                android:textSize="36sp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/ServingsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DetailRecipeName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:background="@layout/shape"
+                android:fontFamily="@font/beb"
+                android:paddingEnd="20dp"
+                android:paddingStart="10dp"
+                android:text="@string/label_Servings"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/ServingsNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ServingsLabel"
+                android:layout_below="@+id/DetailRecipeName"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/beb"
+                android:text="3"
+                android:textSize="24sp" />
+
+
+        </RelativeLayout>
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+
+    <TextView
+        android:id="@+id/IngredientsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Detail_Img_arch"
+        android:background="@layout/shape"
+        android:fontFamily="@font/beb"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:text="Ingredients "
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/IngredientsLabel">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:backgroundTint="@color/fab"
+            app:fabSize="normal"
+            app:layout_anchor="@+id/ingredients"
+            app:layout_anchorGravity="bottom|center"
+            app:srcCompat="@drawable/playerlogo" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</layout>

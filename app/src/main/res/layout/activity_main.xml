@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/Recylcerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1b2023">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/splashscreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/splashimg" />
+
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="140dp"
+            android:background="@layout/shape"
+            android:fontFamily="@font/beb"
+            android:paddingEnd="20dp"
+            android:paddingStart="80dp"
+            android:text=" B a k i n g   a p p "
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/loadingIcon"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/appName"
+            android:layout_alignTop="@+id/appName"
+            android:layout_marginStart="15dp"
+            android:paddingBottom="12dp"
+            android:src="@drawable/loading4" />
+
+
+    </RelativeLayout>
+
+
+</layout>

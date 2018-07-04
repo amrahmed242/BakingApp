@@ -1,0 +1,54 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin"
+
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/splashimg"
+        android:scaleType="centerCrop"
+        android:id="@+id/widget_img"/>
+
+
+    <TextView
+        android:id="@+id/widget_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@layout/shape"
+        android:fontFamily="@font/beb"
+        android:paddingEnd="16dp"
+        android:paddingStart="18dp"
+        android:text="no recipe added"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/widget_img"
+        android:background="@color/exo_edit_mode_background_color"
+        android:alpha=".8"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/beb"
+            android:id="@+id/widget_ingredients"
+            android:paddingTop="3dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
