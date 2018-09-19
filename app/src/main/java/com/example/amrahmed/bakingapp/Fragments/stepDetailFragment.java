@@ -74,13 +74,15 @@ public class stepDetailFragment extends Fragment {
     @Override
     public void onPause() {
 
-        if(exoPlayer!=null){
-            exoPlayer.release();
-            exoPlayer.stop();
+       if(exoPlayer!=null){
             playerPosition=exoPlayer.getCurrentPosition();
-            stepDetailActivity stepDetailActivity=(stepDetailActivity)getActivity();
-            stepDetailActivity.setPlayerPosition(playerPosition);
+            exoPlayer.release();
+            if(getActivity() instanceof stepListActivity) {
+                stepDetailActivity stepDetailActivity = (stepDetailActivity) getActivity();
+                stepDetailActivity.setPlayerPosition(playerPosition);
+            }
         }
+
 
 
         super.onPause();
@@ -92,7 +94,6 @@ public class stepDetailFragment extends Fragment {
     public void onDestroy() {
         if(exoPlayer!=null){
         exoPlayer.release();
-        exoPlayer.stop();
         }
         super.onDestroy();
     }
