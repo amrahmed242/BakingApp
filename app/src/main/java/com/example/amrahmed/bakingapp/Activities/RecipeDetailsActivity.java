@@ -96,6 +96,7 @@ public class RecipeDetailsActivity extends AppCompatActivity {
                 Intent intent=new Intent(getApplicationContext(),stepListActivity.class);
                 String RECIPE_KEY=getResources().getString(R.string.RECIPE_EXTRAS_KEY);
                 intent.putParcelableArrayListExtra(RECIPE_KEY,recipe.getSteps());
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 getApplicationContext().startActivity(intent);
 
             }
